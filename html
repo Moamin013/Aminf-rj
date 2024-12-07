@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Video Editor voor Jouw Behoeften</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload je video</h2>
+            <input type="file" id="video-upload" accept="video/*">
+            <button onclick="uploadVideo()">Upload Video</button>
+        </section>
+
+        <section class="editor-section">
+            <h2>Video Bewerken</h2>
+            <button onclick="cutVideo()">Snijd Video</button>
+            <button onclick="addTextToVideo()">Voeg Tekst Toe</button>
+            <!-- Voeg meer bewerkingsopties toe -->
+        </section>
+
+        <section class="output-section">
+            <h2>Gedownloade Video</h2>
+            <video id="video-player" controls>
+                <!-- Dit is waar de bewerkte video zal verschijnen -->
+            </video>
+            <button onclick="downloadVideo()">Download Video</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Video Editor Platform. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
